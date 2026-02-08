@@ -73,11 +73,17 @@ const SEOHelmet = ({
       <link rel="me" href="https://github.com/eldieng/" />
       
       {/* Schema.org JSON-LD pour les données structurées */}
-      {schema && (
+      {schema && Array.isArray(schema) ? (
+        schema.map((s, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(s)}
+          </script>
+        ))
+      ) : schema ? (
         <script type="application/ld+json">
           {JSON.stringify(schema)}
         </script>
-      )}
+      ) : null}
       
       {/* Liens vers les ressources importantes */}
       <link rel="sitemap" type="application/xml" href="/sitemap.xml" />

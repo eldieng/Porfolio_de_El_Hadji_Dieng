@@ -6,7 +6,7 @@
 // Données de base pour le profil
 const baseProfileData = {
   name: "El Hadji Dieng",
-  jobTitle: "Développeur Front-End | Webmaster | Designer UI/UX",
+  jobTitle: "Développeur Web & Webmaster à Dakar, Sénégal",
   image: "/assets/images/profile.jpg",
   sameAs: [
     "https://www.linkedin.com/in/bambiste4/",
@@ -16,26 +16,82 @@ const baseProfileData = {
     "https://www.tiktok.com/@bambiste4"
   ],
   address: {
+    "@type": "PostalAddress",
     addressLocality: "Dakar",
     addressRegion: "Parcelle Assainie U8",
-    addressCountry: "Sénégal"
+    addressCountry: "SN",
+    postalCode: "12500"
   },
   email: "el.elhadji.dieng@gmail.com",
-  telephone: "+221 77 454 86 61",
-  url: "https://elhadji-dieng.com"
+  telephone: "+221774548661",
+  url: "https://elhadji-dieng.com",
+  areaServed: [
+    { "@type": "Country", name: "Sénégal" },
+    { "@type": "Place", name: "Afrique de l'Ouest" },
+    { "@type": "Place", name: "International" }
+  ]
+};
+
+// Schema LocalBusiness pour le référencement local Google Maps / Google My Business
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "El Hadji Dieng - Développeur Web & Webmaster",
+  image: "https://elhadji-dieng.com/assets/images/profile.jpg",
+  url: "https://elhadji-dieng.com",
+  telephone: "+221774548661",
+  email: "el.elhadji.dieng@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Parcelle Assainie U8",
+    addressLocality: "Dakar",
+    addressCountry: "SN",
+    postalCode: "12500"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 14.6937,
+    longitude: -17.4441
+  },
+  priceRange: "$$",
+  areaServed: [
+    { "@type": "Country", name: "Sénégal" },
+    { "@type": "Country", name: "Côte d'Ivoire" },
+    { "@type": "Country", name: "Mali" },
+    { "@type": "Country", name: "Guinée" },
+    { "@type": "Country", name: "Burkina Faso" },
+    { "@type": "Country", name: "Mauritanie" },
+    { "@type": "Country", name: "France" }
+  ],
+  serviceType: [
+    "Création de sites web",
+    "Développement d'applications web",
+    "Design UI/UX",
+    "Référencement SEO",
+    "Maintenance web",
+    "WordPress"
+  ],
+  knowsLanguage: ["fr", "wo"],
+  sameAs: [
+    "https://www.linkedin.com/in/bambiste4/",
+    "https://github.com/eldieng/"
+  ]
 };
 
 // Données SEO pour chaque page
 const seoData = {
   home: {
-    title: "Accueil | El Hadji Dieng - Développeur Front-End | Webmaster | Designer UI/UX",
-    description: "El Hadji Dieng, webmaster et développeur front-end basé à Dakar, Sénégal. Création de sites web modernes avec expertise dans le domaine numérique.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      ...baseProfileData,
-      description: "Webmaster et développeur front-end spécialisé dans la création de sites web modernes avec des connaissances approfondies dans le domaine numérique."
-    }
+    title: "El Hadji Dieng - Développeur Web & Webmaster à Dakar, Sénégal",
+    description: "El Hadji Dieng, développeur web et webmaster freelance basé à Dakar, Sénégal. Création de sites web, applications web, design UI/UX. Services au Sénégal, Afrique de l'Ouest et à l'international.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        ...baseProfileData,
+        description: "Développeur web et webmaster freelance basé à Dakar, Sénégal. Spécialisé dans la création de sites web modernes, applications web et design UI/UX. Services disponibles au Sénégal, en Afrique de l'Ouest et à l'international."
+      },
+      localBusinessSchema
+    ]
   },
   about: {
     title: "À Propos",
@@ -86,7 +142,7 @@ const seoData = {
   },
   services: {
     title: "Services",
-    description: "Services professionnels de développement web, design UI/UX, création de sites WordPress, applications web et optimisation SEO à Dakar, Sénégal.",
+    description: "Services professionnels de développement web, design UI/UX, WordPress, applications web et SEO à Dakar, Sénégal. Disponible en Afrique de l'Ouest et à l'international.",
     schema: {
       "@context": "https://schema.org",
       "@type": "ItemList",
@@ -122,7 +178,7 @@ const seoData = {
   },
   contact: {
     title: "Contact",
-    description: "Contactez El Hadji Dieng pour vos projets de développement web et design. Disponible pour des missions freelance, collaborations ou opportunités d'emploi.",
+    description: "Contactez El Hadji Dieng à Dakar, Sénégal pour vos projets web. Freelance disponible au Sénégal, en Afrique de l'Ouest et à l'international.",
     schema: {
       "@context": "https://schema.org",
       "@type": "ContactPage",
@@ -257,4 +313,4 @@ const getBlogPostSEOData = (post) => {
   };
 };
 
-export { seoData, getServiceSEOData, getProjectSEOData, getBlogPostSEOData };
+export { seoData, localBusinessSchema, getServiceSEOData, getProjectSEOData, getBlogPostSEOData };
