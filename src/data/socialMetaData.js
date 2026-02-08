@@ -4,7 +4,7 @@
  */
 
 const socialMetaData = {
-  defaultImage: '/assets/images/social-share.jpg', // Image par défaut pour les partages
+  defaultImage: '/assets/images/profile.jpg', // Image par défaut pour les partages
   siteName: 'El Hadji Dieng - Développeur Front-End | Webmaster | Designer UI/UX',
   twitterUsername: '@bambiste4',
   defaultLocale: 'fr_FR',
