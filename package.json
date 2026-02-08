@@ -1,0 +1,66 @@
+{
+  "name": "portfolio-el-hadji-dieng",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "dompurify": "^3.2.6",
+    "framer-motion": "^12.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.2",
+    "react-scripts": "5.0.1",
+    "resend": "^6.9.1",
+    "schema-dts": "^1.1.5",
+    "styled-components": "^6.1.19",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "convert-webp": "node scripts/convert-to-webp.js",
+    "convert-avif": "node scripts/convert-to-avif.js",
+    "optimize-images": "npm run convert-webp && npm run convert-avif"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest-axe": "^3.5.9",
+    "compression-webpack-plugin": "^10.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
+    "jest-axe": "^10.0.0",
+    "jest-styled-components": "^7.2.0",
+    "sharp": "^0.33.2",
+    "source-map-explorer": "^2.5.3",
+    "webpack-bundle-analyzer": "^4.10.1"
+  }
+}

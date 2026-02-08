@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1a237e" />
+    <meta
+      name="description"
+      content="Portfolio d'El Hadji Dieng - Web Master Professionnel"
+    />
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="v8dr94hNIsJZnWYNxLx_mGS0V4LlgtTKLASJbtE61Ig" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>El Hadji Dieng | Portfolio</title>
+    <!-- Google Fonts - Preconnect pour performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Base Styles -->
+    <style>
+      :root {
+        --color-blue: #1a237e;
+        --color-orange: #ff6f00;
+        --color-white: #ffffff;
+        --color-gray-light: #f5f5f5;
+        --color-gray-dark: #333333;
+        --color-orange-dark: #e65100;
+        --bg-primary: #ffffff;
+        --bg-secondary: #f5f5f5;
+        --bg-card: #ffffff;
+        --bg-header: rgba(255, 255, 255, 0.95);
+        --text-primary: #333333;
+        --text-heading: #1a237e;
+        --shadow-color: rgba(0, 0, 0, 0.1);
+      }
+      body.dark-mode {
+        --bg-primary: #0f0f1a;
+        --bg-secondary: #1a1a2e;
+        --bg-card: #1e1e32;
+        --bg-header: rgba(15, 15, 26, 0.95);
+        --text-primary: #e0e0e0;
+        --text-heading: #ffffff;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+        --color-gray-light: #1a1a2e;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        color: var(--text-primary);
+        background-color: var(--bg-primary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      try {
+        var d = localStorage.getItem('darkMode');
+        if (d === 'true' || (d === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.body.classList.add('dark-mode');
+        }
+      } catch(e) {}
+    </script>
+    <noscript>
+      <h1>El Hadji Dieng - Développeur Front-End | Webmaster | Designer UI/UX</h1>
+      <p>Portfolio professionnel d'El Hadji Dieng, développeur web basé à Dakar, Sénégal. Spécialisé dans la création de sites web modernes, le design UI/UX et l'optimisation SEO.</p>
+      <p>Veuillez activer JavaScript pour accéder à l'application complète.</p>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
