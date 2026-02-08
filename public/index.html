@@ -81,6 +81,13 @@
   </head>
   <body>
     <script>
+      // Force canonical URL: https://elhadji-dieng.com (sans www, HTTPS)
+      (function() {
+        var h = window.location.hostname;
+        if (h === 'www.elhadji-dieng.com' || window.location.protocol === 'http:') {
+          window.location.replace('https://elhadji-dieng.com' + window.location.pathname + window.location.search);
+        }
+      })();
       try {
         var d = localStorage.getItem('darkMode');
         if (d === 'true' || (d === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

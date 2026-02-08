@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { lazyWithPreload } from '../utils/LazyLoad';
 import LoadingSpinner from '../components/common/LoadingSpinner';
@@ -48,6 +48,7 @@ const AppRoutes = () => {
             <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
             <Route path="/a-propos" element={<PageTransition><AboutPage /></PageTransition>} />
             <Route path="/competences" element={<PageTransition><SkillsPage /></PageTransition>} />
+            <Route path="/skills" element={<Navigate to="/competences" replace />} />
             <Route path="/portfolio" element={<PageTransition><PortfolioPage /></PageTransition>} />
             <Route path="/project/:projectId" element={<PageTransition><ProjectDetailPage /></PageTransition>} />
             <Route path="/services" element={<PageTransition><ServicesPage /></PageTransition>} />
