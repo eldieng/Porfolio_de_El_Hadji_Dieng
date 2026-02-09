@@ -112,6 +112,15 @@ const ProjectsGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  
+  @media (max-width: 991px) and (min-width: 577px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ProjectCard = styled(motion.div)`

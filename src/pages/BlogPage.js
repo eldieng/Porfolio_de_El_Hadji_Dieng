@@ -207,6 +207,11 @@ const BlogContainer = styled.div`
   padding: 60px 20px;
   gap: 40px;
   
+  @media (max-width: 1024px) {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
   @media (max-width: 992px) {
     flex-direction: column;
   }
@@ -317,6 +322,10 @@ const PostsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
+  
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;

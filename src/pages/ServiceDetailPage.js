@@ -83,6 +83,14 @@ const PageHeader = styled.div`
     pointer-events: none;
   }
   
+  @media (max-width: 1024px) {
+    height: 300px;
+    
+    &:after {
+      font-size: 140px;
+    }
+  }
+  
   @media (max-width: 768px) {
     height: 280px;
     

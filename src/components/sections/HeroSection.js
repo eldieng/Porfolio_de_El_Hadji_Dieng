@@ -30,6 +30,10 @@ const HeroTitle = styled(motion.h1)`
   margin-bottom: 20px;
   line-height: 1.2;
   
+  @media (max-width: 1024px) {
+    font-size: 2.8rem;
+  }
+  
   @media (max-width: 768px) {
     font-size: 2.5rem;
   }
@@ -43,6 +47,11 @@ const HeroSubtitle = styled(motion.p)`
   font-size: 1.5rem;
   margin-bottom: 30px;
   max-width: 700px;
+  
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+    max-width: 600px;
+  }
   
   @media (max-width: 768px) {
     font-size: 1.2rem;

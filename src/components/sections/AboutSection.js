@@ -7,6 +7,10 @@ import { useLanguage } from '../../utils/LanguageContext';
 const AboutContainer = styled.section`
   padding: 100px 0;
   background-color: var(--color-white);
+  
+  @media (max-width: 1024px) {
+    padding: 70px 0;
+  }
   position: relative;
   overflow: hidden;
   
@@ -32,11 +36,17 @@ const AboutContent = styled.div`
   
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 `;
 
 const AboutImage = styled(motion.div)`
   position: relative;
+  
+  @media (max-width: 992px) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
   
   img {
     width: 100%;
@@ -114,6 +124,10 @@ const AboutInfo = styled(motion.div)`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    
+    @media (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
     
     @media (max-width: 768px) {
       font-size: 2.3rem;

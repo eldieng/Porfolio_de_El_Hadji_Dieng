@@ -28,6 +28,10 @@ const PageContainer = styled.div`
 
 const PageHeader = styled.div`
   height: 300px;
+  
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
   background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(26, 35, 126, 0.9)), url('/assets/images/quote-header.jpg');
   background-size: cover;
   background-position: center;
@@ -76,6 +80,10 @@ const HeaderContent = styled.div`
     background: linear-gradient(to right, #ffffff, #e6e6e6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    @media (max-width: 1024px) {
+      font-size: 2.3rem;
+    }
     
     &:after {
       content: '';
@@ -137,6 +145,10 @@ const ContentContainer = styled.div`
   padding: 80px 20px;
   position: relative;
   z-index: 1;
+  
+  @media (max-width: 1024px) {
+    padding: 50px 20px;
+  }
 `;
 
 const FormContainer = styled.div`
@@ -144,8 +156,14 @@ const FormContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   
+  @media (max-width: 1024px) {
+    gap: 40px;
+  }
+  
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
   }
 `;
 
@@ -575,7 +593,7 @@ const QuoteRequestPage = () => {
     
     emailjs.sendForm(
       'service_xqzvbip',
-      'template_g0j9dce',
+      'template_q0hjlg6',
       formRef.current,
       '8XdPQ1Z09eUin6E7g'
     )

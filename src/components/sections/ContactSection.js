@@ -11,6 +11,10 @@ import SectionHeader from '../common/SectionHeader';
 const ContactContainer = styled.section`
   padding: 100px 0;
   background-color: var(--color-gray-light);
+  
+  @media (max-width: 1024px) {
+    padding: 70px 0;
+  }
   position: relative;
   overflow: hidden;
   
@@ -35,8 +39,13 @@ const ContactContent = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   
+  @media (max-width: 1024px) {
+    gap: 40px;
+  }
+  
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
+    max-width: 700px;
   }
 `;
 
@@ -118,6 +127,10 @@ const ContactForm = styled(motion.form)`
   background-color: var(--color-white);
   padding: 40px;
   border-radius: 15px;
+  
+  @media (max-width: 1024px) {
+    padding: 30px;
+  }
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -584,7 +597,7 @@ const ContactSection = () => {
       
       emailjs.send(
         'service_xqzvbip',
-        'template_r1n9lnj',
+        'template_zktbfec',
         {
           from_name: formData.name,
           from_email: formData.email,

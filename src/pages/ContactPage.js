@@ -14,10 +14,22 @@ const PageHeader = styled.div`
   justify-content: center;
   color: var(--color-white);
   
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
+  
   h1 {
     font-size: 3rem;
     text-align: center;
     margin: 0;
+    
+    @media (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 `;
 

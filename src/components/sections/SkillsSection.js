@@ -47,6 +47,11 @@ const SkillCategories = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }

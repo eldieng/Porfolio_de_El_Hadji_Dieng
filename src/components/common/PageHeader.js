@@ -50,6 +50,10 @@ const HeaderContainer = styled.div`
     z-index: 1;
   }
   
+  @media (max-width: 1024px) {
+    height: 260px;
+  }
+  
   @media (max-width: 768px) {
     height: 250px;
   }
@@ -67,8 +71,12 @@ const HeaderContent = styled.div`
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       font-size: 2.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
     }
     
     @media (max-width: 576px) {

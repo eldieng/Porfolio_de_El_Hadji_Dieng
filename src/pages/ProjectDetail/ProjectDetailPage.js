@@ -316,6 +316,10 @@ const ProjectInfo = styled.div`
   background-color: var(--color-white);
   border-radius: 15px;
   padding: 35px;
+  
+  @media (max-width: 1024px) {
+    padding: 25px;
+  }
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.03);
   position: relative;
@@ -338,6 +342,10 @@ const ProjectInfo = styled.div`
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 15px;
+    
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+    }
     
     &:after {
       content: '';
@@ -556,6 +564,14 @@ const Header = styled.div`
     pointer-events: none;
   }
   
+  @media (max-width: 1024px) {
+    height: 300px;
+    
+    &:after {
+      font-size: 140px;
+    }
+  }
+  
   @media (max-width: 768px) {
     height: 280px;
     
@@ -579,8 +595,12 @@ const HeaderContent = styled.div`
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       font-size: 2.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
     }
     
     @media (max-width: 576px) {
@@ -617,6 +637,11 @@ const CTASection = styled(motion.div)`
   border-radius: 15px;
   padding: 40px;
   margin-top: 60px;
+  
+  @media (max-width: 1024px) {
+    padding: 30px;
+    margin-top: 40px;
+  }
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.03);
   text-align: center;

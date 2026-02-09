@@ -57,7 +57,7 @@ const NavLinks = styled.div`
   display: flex;
   align-items: center;
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     position: fixed;
     top: 0;
     right: ${({ isOpen }) => isOpen ? '0' : '-100%'};
@@ -76,7 +76,7 @@ const NavLinks = styled.div`
 const NavItem = styled.div`
   margin: 0 5px;
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     margin: 10px 0;
   }
 `;
@@ -102,7 +102,7 @@ const NavLink = styled(Link)`
     width: 100%;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     margin: 15px 0;
     color: var(--color-white);
   }
@@ -128,7 +128,7 @@ const QuoteButton = styled(Link)`
     box-shadow: 0 6px 15px rgba(255, 153, 0, 0.4);
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     margin: 20px auto 0;
   }
 `;
@@ -153,7 +153,7 @@ const DarkModeToggle = styled.button`
     transform: scale(1.1);
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     color: var(--color-white);
     margin: 10px 0;
   }
@@ -168,7 +168,7 @@ const MobileMenuButton = styled.button`
   cursor: pointer;
   z-index: 1001;
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     display: block;
   }
 `;
