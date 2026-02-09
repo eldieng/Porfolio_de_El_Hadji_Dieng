@@ -1,5 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import styled from 'styled-components';
+import { FaWhatsapp } from 'react-icons/fa';
 
 // Création du contexte d'accessibilité
 const AccessibilityContext = createContext();
@@ -62,96 +63,35 @@ export const AccessibilityProvider = ({ children }) => {
   return (
     <AccessibilityContext.Provider value={value}>
       {children}
-      <AccessibilityWidget />
+      <WhatsAppButton />
     </AccessibilityContext.Provider>
   );
 };
 
-// Composant widget d'accessibilité
-const AccessibilityWidget = () => {
-  const {
-    highContrast,
-    setHighContrast,
-    fontSize,
-    setFontSize,
-    reducedMotion,
-    setReducedMotion,
-    showAccessibilityMenu,
-    setShowAccessibilityMenu,
-  } = useAccessibility();
-
+// Bouton WhatsApp flottant
+const WhatsAppButton = () => {
   return (
-    <>
-      <AccessibilityButton
-        aria-label="Ouvrir les options d'accessibilité"
-        onClick={() => setShowAccessibilityMenu(!showAccessibilityMenu)}
-      >
-        <AccessibilityIcon aria-hidden="true" />
-      </AccessibilityButton>
-
-      {showAccessibilityMenu && (
-        <AccessibilityMenu role="dialog" aria-label="Options d'accessibilité">
-          <h3>Options d'accessibilité</h3>
-          
-          <AccessibilityOption>
-            <label htmlFor="high-contrast">
-              <input
-                id="high-contrast"
-                type="checkbox"
-                checked={highContrast}
-                onChange={() => setHighContrast(!highContrast)}
-              />
-              Contraste élevé
-            </label>
-          </AccessibilityOption>
-
-          <AccessibilityOption>
-            <label htmlFor="font-size">Taille du texte:</label>
-            <select
-              id="font-size"
-              value={fontSize}
-              onChange={(e) => setFontSize(parseFloat(e.target.value))}
-              aria-label="Sélectionner la taille du texte"
-            >
-              <option value="1">Normal</option>
-              <option value="1.25">Grand</option>
-              <option value="1.5">Très grand</option>
-            </select>
-          </AccessibilityOption>
-
-          <AccessibilityOption>
-            <label htmlFor="reduced-motion">
-              <input
-                id="reduced-motion"
-                type="checkbox"
-                checked={reducedMotion}
-                onChange={() => setReducedMotion(!reducedMotion)}
-              />
-              Réduire les animations
-            </label>
-          </AccessibilityOption>
-
-          <CloseButton
-            onClick={() => setShowAccessibilityMenu(false)}
-            aria-label="Fermer les options d'accessibilité"
-          >
-            Fermer
-          </CloseButton>
-        </AccessibilityMenu>
-      )}
-    </>
+    <WhatsAppLink
+      href="https://wa.me/221774548661"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactez-moi sur WhatsApp"
+      title="Discuter sur WhatsApp"
+    >
+      <FaWhatsapp />
+    </WhatsAppLink>
   );
 };
 
-// Styles des composants
-const AccessibilityButton = styled.button`
+// Styles du bouton WhatsApp
+const WhatsAppLink = styled.a`
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  bottom: 25px;
+  right: 25px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background-color: var(--color-blue);
+  background-color: #25D366;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -159,110 +99,36 @@ const AccessibilityButton = styled.button`
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  box-shadow: 0 2px 10px var(--shadow-color);
-  transition: background-color 0.3s;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  font-size: 28px;
+  animation: whatsappPulse 2s infinite;
 
-  &:hover, &:focus {
-    background-color: var(--color-orange);
-    outline: 2px solid white;
+  &:hover {
+    background-color: #128C7E;
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
   }
 
-  &:focus {
-    outline: 3px solid var(--color-orange);
-    outline-offset: 2px;
-  }
-`;
-
-const AccessibilityIcon = styled.span`
-  &:before {
-    content: '♿';
-    font-size: 24px;
-  }
-`;
-
-const AccessibilityMenu = styled.div`
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 280px;
-  background-color: var(--bg-card);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 5px 15px var(--shadow-color);
-  z-index: 1000;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-
-  h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: var(--text-heading);
-  }
-
-  .high-contrast & {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-  }
-`;
-
-const AccessibilityOption = styled.div`
-  margin-bottom: 15px;
-
-  label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-  }
-
-  input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-  }
-
-  select {
-    margin-top: 5px;
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid var(--input-border);
-    background-color: var(--input-bg);
-    color: var(--text-primary);
-    transition: background-color 0.3s ease, color 0.3s ease;
-
-    .high-contrast & {
-      background-color: black;
-      color: white;
-      border-color: white;
+  @keyframes whatsappPulse {
+    0% {
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+      box-shadow: 0 4px 25px rgba(37, 211, 102, 0.6);
+    }
+    100% {
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
     }
   }
-`;
 
-const CloseButton = styled.button`
-  width: 100%;
-  padding: 8px;
-  background-color: var(--color-blue);
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-
-  &:hover, &:focus {
-    background-color: var(--color-orange);
-  }
-
-  &:focus {
-    outline: 3px solid var(--color-orange);
-    outline-offset: 2px;
-  }
-
-  .high-contrast & {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
   }
 `;
 
