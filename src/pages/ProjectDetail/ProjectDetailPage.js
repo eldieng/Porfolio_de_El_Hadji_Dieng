@@ -154,8 +154,8 @@ const ProjectDetailPage = () => {
               Contactez-moi dès aujourd'hui pour discuter de votre projet et obtenir un devis personnalisé.
               Je vous accompagnerai tout au long du processus pour vous assurer un résultat à la hauteur de vos attentes.
             </p>
-            <CTAButton to="/demande-devis">
-              <FaArrowRight /> Demander un devis
+            <CTAButton to={`/demande-devis?service=${project.category === 'sites-web' ? 'creation-site' : project.category === 'applications-web' ? 'applications' : project.category === 'ui-ux' ? 'design' : ''}`}>
+              <FaArrowRight /> <span>Demander un devis</span>
             </CTAButton>
           </CTASection>
         </ContainerWrapper>
@@ -692,14 +692,14 @@ const CTAButton = styled(Link)`
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
-  background: linear-gradient(135deg, var(--color-blue), var(--color-blue-dark));
-  color: black;
+  background: linear-gradient(135deg, var(--color-orange), var(--color-orange-dark));
+  color: #ffffff;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 6px 15px rgba(26, 35, 126, 0.2);
+  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
   position: relative;
   overflow: hidden;
   
@@ -710,14 +710,15 @@ const CTAButton = styled(Link)`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-orange), var(--color-orange-dark));
+    background: linear-gradient(135deg, var(--color-blue), var(--color-blue-dark));
     opacity: 0;
     transition: opacity 0.3s ease;
   }
   
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(26, 35, 126, 0.25);
+    box-shadow: 0 10px 20px rgba(255, 87, 34, 0.35);
+    color: #ffffff;
     
     &:before {
       opacity: 1;

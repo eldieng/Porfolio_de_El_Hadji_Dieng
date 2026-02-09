@@ -2,7 +2,8 @@ import React, { useState, useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaCheck, FaEnvelope, FaPhone, FaUser, FaEuroSign, FaExclamationTriangle } from 'react-icons/fa';
+import { FaArrowLeft, FaCheck, FaEnvelope, FaPhone, FaUser, FaEuroSign, FaExclamationTriangle, FaInfoCircle } from 'react-icons/fa';
+import servicesData from '../data/servicesData';
 import emailjs from '@emailjs/browser';
 import SEOHelmet from '../utils/SEOHelmet';
 import { seoData } from '../data/seoData';
@@ -317,8 +318,8 @@ const Textarea = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
-  background: linear-gradient(135deg, var(--color-blue), var(--color-blue-dark));
-  color: black;
+  background: linear-gradient(135deg, var(--color-orange), var(--color-orange-dark));
+  color: #ffffff;
   border: none;
   padding: 16px 32px;
   border-radius: 30px;
@@ -342,14 +343,15 @@ const SubmitButton = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-blue-dark), var(--color-blue));
+    background: linear-gradient(135deg, var(--color-blue), var(--color-blue-dark));
     opacity: 0;
     transition: opacity 0.3s ease;
   }
   
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(26, 35, 126, 0.25);
+    box-shadow: 0 12px 25px rgba(255, 87, 34, 0.35);
+    color: #ffffff;
     
     &:before {
       opacity: 1;
@@ -379,7 +381,7 @@ const InfoSection = styled(motion.div)`
     display: inline-block;
     background: linear-gradient(to right, var(--color-blue), var(--color-blue-dark));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: bl;
+    -webkit-text-fill-color: transparent;
     
     &:after {
       content: '';
@@ -543,6 +545,36 @@ const SuccessMessage = styled(motion.div)`
   }
 `;
 
+const ServiceBanner = styled(motion.div)`
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: linear-gradient(135deg, rgba(26, 35, 126, 0.08), rgba(26, 35, 126, 0.04));
+  border-left: 4px solid var(--color-blue);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(26, 35, 126, 0.08);
+  
+  svg {
+    color: var(--color-blue);
+    font-size: 1.4rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  
+  strong {
+    color: var(--color-blue);
+    font-size: 1.1rem;
+  }
+  
+  p {
+    margin: 5px 0 0;
+    color: var(--color-gray-dark);
+    font-size: 0.95rem;
+  }
+`;
+
 const QuoteRequestPage = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -647,6 +679,20 @@ const QuoteRequestPage = () => {
       </PageHeader>
       
       <ContentContainer>
+        {serviceParam && servicesData[serviceParam] && (
+          <ServiceBanner
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <FaInfoCircle />
+            <div>
+              <strong>Service sélectionné :</strong> {servicesData[serviceParam].title}
+              <p>Le service a été pré-sélectionné. Vous pouvez le modifier si besoin.</p>
+            </div>
+          </ServiceBanner>
+        )}
+        
         {isSubmitted && (
           <SuccessMessage
             initial={{ opacity: 0, y: -20 }}
