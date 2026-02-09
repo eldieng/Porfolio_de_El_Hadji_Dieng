@@ -309,7 +309,7 @@ const SubmitButton = styled.button`
   align-items: center;
   gap: 12px;
   background: linear-gradient(to right, var(--color-blue), var(--color-blue-dark));
-  color: var(--color-black);
+  color: #ffffff;
   padding: 14px 30px;
   border-radius: 30px;
   font-weight: 600;
@@ -595,16 +595,28 @@ const ContactSection = () => {
       setIsSubmitting(true);
       setSubmitError(false);
       
+      // 1. Envoyer la notification admin
       emailjs.send(
         'service_xqzvbip',
-        'template_zktbfec',
+        'template_q0hjlg6',
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: `[CONTACT] ${formData.subject}`,
+          name: formData.name,
+          email: formData.email,
+          phone: '',
+          company: '',
+          service: `[CONTACT] ${formData.subject}`,
+          budget: '',
+          timeline: '',
           message: formData.message,
-          time: new Date().toLocaleString(),
-          formatted_message: `=== NOUVEAU MESSAGE DE CONTACT ===\n\nð\u009f\u0091\u00a4 Nom: ${formData.name}\nð\u009f\u0093\u00a7 Email: ${formData.email}\nð\u009f\u0093\u009d Sujet: ${formData.subject}\n\nð\u009f\u0093\u0084 Message:\n${formData.message}\n\nâ\u008f\u00b0 Date: ${new Date().toLocaleString()}\n\n=== FIN DU MESSAGE ===`
+          time: new Date().toLocaleString('fr-SN', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+            timeZone: 'Africa/Dakar'
+          }),
         },
         '8XdPQ1Z09eUin6E7g'
       )
@@ -617,18 +629,22 @@ const ContactSection = () => {
           time: new Date().toLocaleString()
         });
         
-        // Email de confirmation au visiteur
+        // 2. Envoyer l'accusé de réception au client
         emailjs.send(
           'service_xqzvbip',
-          'template_confirmation',
+          'template_jjzb8mf',
           {
-            to_name: formData.name,
-            to_email: formData.email,
-            subject: 'Confirmation de votre message',
-            message: `Bonjour ${formData.name},\n\nNous avons bien reçu votre message concernant "${formData.subject}".\n\nNous vous répondrons dans les plus brefs délais.\n\nCordialement,\nEl Hadji Dieng`
+            name: formData.name,
+            email: formData.email,
+            type: 'contact',
+            reply_subject: 'Merci pour votre message - El Hadji Dieng',
+            service: formData.subject,
+            budget: '',
+            timeline: '',
+            message: formData.message,
           },
           '8XdPQ1Z09eUin6E7g'
-        ).catch(err => console.error('Erreur confirmation:', err));
+        ).catch(err => console.error('Erreur accusé de réception:', err));
         
         setIsSubmitting(false);
         setSubmitSuccess(true);

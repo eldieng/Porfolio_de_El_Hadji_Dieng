@@ -623,6 +623,7 @@ const QuoteRequestPage = () => {
     });
     formElement.appendChild(timeInput);
     
+    // 1. Envoyer la notification admin
     emailjs.sendForm(
       'service_xqzvbip',
       'template_q0hjlg6',
@@ -630,6 +631,23 @@ const QuoteRequestPage = () => {
       '8XdPQ1Z09eUin6E7g'
     )
     .then(() => {
+      // 2. Envoyer l'accusé de réception au client
+      emailjs.send(
+        'service_xqzvbip',
+        'template_jjzb8mf',
+        {
+          name: formData.name,
+          email: formData.email,
+          type: 'devis',
+          reply_subject: 'Confirmation de votre demande de devis - El Hadji Dieng',
+          service: formData.service,
+          budget: formData.budget,
+          timeline: formData.timeline,
+          message: formData.message,
+        },
+        '8XdPQ1Z09eUin6E7g'
+      ).catch(err => console.error('Erreur accusé de réception:', err));
+      
       setIsSubmitting(false);
       setIsSubmitted(true);
       
