@@ -227,7 +227,7 @@ export const blogPosts = [
     date: '2025-08-15',
     category: 'Business',
     tags: ['Développeur Web', 'Dakar', 'Sénégal', 'Freelance', 'Guide', 'Création Site Web'],
-    image: '/assets/images/Blog/Comment Choisir Developpeur Web Dakar 2025.jpg',
+    image: '/assets/images/Blog/Comment Choisir un Développeur Web à Dakar en 2025  7 Critères Essentiels.png',
     readTime: '12 min'
   },
   {
