@@ -95,7 +95,7 @@ export const blogPosts = [
     date: '2025-09-20',
     category: 'Business',
     tags: ['Site Web', 'Entreprise', 'Dakar', 'Sénégal', 'PME', 'Digital'],
-    image: '/assets/images/Blog/Pourquoi Site Web Entreprise Dakar 2025.jpg',
+    image: '/assets/images/Blog/Pourquoi Site Web Entreprise Dakar 2025.png',
     readTime: '10 min'
   },
   {
