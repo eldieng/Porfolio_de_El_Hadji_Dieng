@@ -24,7 +24,7 @@ const SEOHelmet = ({
   const siteUrl = 'https://elhadji-dieng.com';
   
   // Nom complet pour les titres - si le titre contient déjà le nom, on ne l'ajoute pas
-  const fullTitle = title.includes('El Hadji Dieng') ? title : `${title} | El Hadji Dieng - Développeur Front-End | Webmaster | Designer UI/UX`;
+  const fullTitle = title.includes('El Hadji Dieng') ? title : `${title} | El Hadji Dieng - Développeur Web Dakar`;
   
   // Construction de l'URL complète pour l'image
   const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `${siteUrl}${imageUrl}`;

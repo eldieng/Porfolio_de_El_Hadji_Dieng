@@ -78,11 +78,63 @@ const localBusinessSchema = {
   ]
 };
 
+// Schema FAQ pour la page services (rich snippets Google)
+const servicesFAQSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Combien coûte la création d'un site web à Dakar ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le coût de création d'un site web à Dakar varie selon le type de projet : site vitrine à partir de 150 000 FCFA, site e-commerce à partir de 300 000 FCFA, application web sur devis. Contactez-moi pour un devis personnalisé gratuit."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Quel est le délai de création d'un site web ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le délai moyen est de 2 à 4 semaines pour un site vitrine, 4 à 8 semaines pour un site e-commerce ou une application web. Le délai exact dépend de la complexité du projet et de vos besoins spécifiques."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Proposez-vous la maintenance de sites web ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui, je propose des forfaits de maintenance web incluant les mises à jour de sécurité, les sauvegardes régulières, le monitoring de performance et le support technique. Disponible au Sénégal et en Afrique de l'Ouest."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Travaillez-vous avec des clients hors du Sénégal ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolument ! Je travaille avec des clients au Sénégal, en Afrique de l'Ouest (Côte d'Ivoire, Mali, Guinée, Burkina Faso) et à l'international, notamment en France. La collaboration se fait à distance via des outils modernes."
+      }
+    }
+  ]
+};
+
+// Schema BreadcrumbList pour la navigation
+const getBreadcrumbSchema = (items) => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    item: `https://elhadji-dieng.com${item.path}`
+  }))
+});
+
 // Données SEO pour chaque page
 const seoData = {
   home: {
-    title: "El Hadji Dieng - Développeur Web & Webmaster à Dakar, Sénégal",
-    description: "El Hadji Dieng, développeur web et webmaster freelance basé à Dakar, Sénégal. Création de sites web, applications web, design UI/UX. Services au Sénégal, Afrique de l'Ouest et à l'international.",
+    title: "Développeur Web Dakar, Sénégal - Création Site Web | El Hadji Dieng",
+    description: "El Hadji Dieng, développeur web freelance à Dakar. Création de sites web professionnels, applications web, design UI/UX et référencement SEO. Devis gratuit pour votre projet au Sénégal et en Afrique de l'Ouest.",
     schema: [
       {
         "@context": "https://schema.org",
@@ -94,137 +146,164 @@ const seoData = {
     ]
   },
   about: {
-    title: "À Propos",
-    description: "Découvrez mon parcours, mes compétences et ma passion pour le développement front-end et la gestion de sites web. Expertise dans la création d'interfaces web modernes.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      ...baseProfileData,
-      description: "Webmaster et développeur front-end passionné par la création d'interfaces web modernes et l'optimisation de l'expérience utilisateur."
-    }
+    title: "Développeur Web Freelance Dakar - Parcours & Expertise | El Hadji Dieng",
+    description: "Découvrez le parcours d'El Hadji Dieng, développeur web et webmaster freelance à Dakar. Expert en création de sites web modernes, React, WordPress et design UI/UX au Sénégal.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        ...baseProfileData,
+        description: "Webmaster et développeur front-end passionné par la création d'interfaces web modernes et l'optimisation de l'expérience utilisateur."
+      },
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "À Propos", path: "/a-propos" }])
+    ]
   },
   skills: {
-    title: "Compétences",
-    description: "Mes compétences techniques en développement front-end, webmastering et design d'interfaces. Maîtrise de WordPress, React, Node.js et outils collaboratifs comme Notion et Jira.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      ...baseProfileData,
-      knowsAbout: [
-        "Développement Front-End", 
-        "Webmastering", 
-        "React", 
-        "WordPress", 
-        "HTML/CSS", 
-        "JavaScript", 
-        "Node.js",
-        "Design UI/UX",
-        "Figma",
-        "Notion",
-        "Jira",
-        "Outils Collaboratifs"
-      ]
-    }
+    title: "Compétences Développeur Web - React, WordPress, Node.js | El Hadji Dieng",
+    description: "Compétences techniques d'El Hadji Dieng : développement front-end (React, JavaScript, HTML/CSS), webmastering (WordPress), design UI/UX (Figma), Node.js et outils collaboratifs. Dakar, Sénégal.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        ...baseProfileData,
+        knowsAbout: [
+          "Développement Front-End", 
+          "Webmastering", 
+          "React", 
+          "WordPress", 
+          "HTML/CSS", 
+          "JavaScript", 
+          "Node.js",
+          "Design UI/UX",
+          "Figma",
+          "Notion",
+          "Jira",
+          "Outils Collaboratifs"
+        ]
+      },
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "Compétences", path: "/competences" }])
+    ]
   },
   portfolio: {
-    title: "Portfolio",
-    description: "Découvrez mes projets de développement web, design UI/UX et applications. Sites web, applications web et designs pour des clients de divers secteurs.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: "Portfolio de El Hadji Dieng",
-      description: "Collection de projets de développement web et design UI/UX réalisés par El Hadji Dieng.",
-      author: {
-        "@type": "Person",
-        name: baseProfileData.name
-      }
-    }
-  },
-  services: {
-    title: "Services",
-    description: "Services professionnels de développement web, design UI/UX, WordPress, applications web et SEO à Dakar, Sénégal. Disponible en Afrique de l'Ouest et à l'international.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      name: "Services proposés par El Hadji Dieng",
-      description: "Liste des services professionnels de développement web et design proposés par El Hadji Dieng.",
-      itemListElement: [
-        {
-          "@type": "Service",
-          position: 1,
-          name: "Création de Sites Web",
-          description: "Conception et développement de sites web modernes, responsives et optimisés pour tous les appareils."
-        },
-        {
-          "@type": "Service",
-          position: 2,
-          name: "Design Web & UX/UI",
-          description: "Création d'interfaces utilisateur attrayantes et intuitives pour offrir une expérience utilisateur exceptionnelle."
-        },
-        {
-          "@type": "Service",
-          position: 3,
-          name: "Applications Web",
-          description: "Développement d'applications web performantes et personnalisées pour répondre à vos besoins spécifiques."
-        },
-        {
-          "@type": "Service",
-          position: 4,
-          name: "Référencement SEO",
-          description: "Optimisation de votre site pour les moteurs de recherche afin d'améliorer sa visibilité et générer plus de trafic."
-        }
-      ]
-    }
-  },
-  contact: {
-    title: "Contact",
-    description: "Contactez El Hadji Dieng à Dakar, Sénégal pour vos projets web. Freelance disponible au Sénégal, en Afrique de l'Ouest et à l'international.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      name: "Contact El Hadji Dieng",
-      description: "Page de contact pour joindre El Hadji Dieng, développeur web et designer UI/UX à Dakar, Sénégal.",
-      mainEntity: {
-        "@type": "Person",
-        name: baseProfileData.name,
-        email: baseProfileData.email,
-        telephone: baseProfileData.telephone,
-        address: baseProfileData.address
-      }
-    }
-  },
-  quoteRequest: {
-    title: "Demande de Devis",
-    description: "Demandez un devis personnalisé pour votre projet de développement web ou design. Je vous répondrai dans les plus brefs délais avec une proposition adaptée à vos besoins.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      name: "Demande de Devis - El Hadji Dieng",
-      description: "Formulaire de demande de devis pour les services de développement web et design proposés par El Hadji Dieng.",
-      mainEntity: {
-        "@type": "Service",
-        provider: {
+    title: "Portfolio Développeur Web Dakar - Projets & Réalisations | El Hadji Dieng",
+    description: "Découvrez les projets web réalisés par El Hadji Dieng à Dakar : sites vitrines, e-commerce, applications web et designs UI/UX pour des clients au Sénégal et en Afrique de l'Ouest.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Portfolio de El Hadji Dieng - Développeur Web à Dakar",
+        description: "Collection de projets de développement web et design UI/UX réalisés par El Hadji Dieng à Dakar, Sénégal.",
+        author: {
           "@type": "Person",
           name: baseProfileData.name
-        },
-        description: "Services de développement web et design UI/UX"
-      }
-    }
+        }
+      },
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "Portfolio", path: "/portfolio" }])
+    ]
+  },
+  services: {
+    title: "Création Site Web Dakar - Services Web, SEO & Design | El Hadji Dieng",
+    description: "Services de création de sites web à Dakar : sites vitrines, e-commerce, applications web, design UI/UX, référencement SEO et maintenance. Développeur freelance au Sénégal. Devis gratuit.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "Services de développement web à Dakar par El Hadji Dieng",
+        description: "Services professionnels de création de sites web, design et SEO à Dakar, Sénégal.",
+        itemListElement: [
+          {
+            "@type": "Service",
+            position: 1,
+            name: "Création de Sites Web à Dakar",
+            description: "Conception et développement de sites web modernes, responsives et optimisés. Sites vitrines, e-commerce, blogs.",
+            provider: { "@type": "Person", name: "El Hadji Dieng" },
+            areaServed: { "@type": "Country", name: "Sénégal" }
+          },
+          {
+            "@type": "Service",
+            position: 2,
+            name: "Design Web & UX/UI",
+            description: "Création d'interfaces utilisateur attrayantes et intuitives avec Figma pour une expérience utilisateur exceptionnelle.",
+            provider: { "@type": "Person", name: "El Hadji Dieng" }
+          },
+          {
+            "@type": "Service",
+            position: 3,
+            name: "Développement d'Applications Web",
+            description: "Applications web performantes avec React et Node.js pour répondre à vos besoins spécifiques.",
+            provider: { "@type": "Person", name: "El Hadji Dieng" }
+          },
+          {
+            "@type": "Service",
+            position: 4,
+            name: "Référencement SEO au Sénégal",
+            description: "Optimisation pour les moteurs de recherche : audit SEO, optimisation on-page, référencement local à Dakar et au Sénégal.",
+            provider: { "@type": "Person", name: "El Hadji Dieng" }
+          }
+        ]
+      },
+      servicesFAQSchema,
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "Services", path: "/services" }])
+    ]
+  },
+  contact: {
+    title: "Contacter un Développeur Web à Dakar | El Hadji Dieng - Freelance Sénégal",
+    description: "Contactez El Hadji Dieng, développeur web freelance à Dakar, Sénégal. Disponible pour vos projets de création de sites web, design et SEO au Sénégal et en Afrique de l'Ouest. Réponse sous 48h.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        name: "Contacter El Hadji Dieng - Développeur Web Dakar",
+        description: "Contactez El Hadji Dieng pour vos projets de création de sites web à Dakar, Sénégal.",
+        mainEntity: {
+          "@type": "Person",
+          name: baseProfileData.name,
+          email: baseProfileData.email,
+          telephone: baseProfileData.telephone,
+          address: baseProfileData.address
+        }
+      },
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "Contact", path: "/contact" }])
+    ]
+  },
+  quoteRequest: {
+    title: "Devis Création Site Web Dakar - Gratuit & Sans Engagement | El Hadji Dieng",
+    description: "Demandez un devis gratuit pour votre projet web à Dakar : site vitrine, e-commerce, application web, design UI/UX ou SEO. Réponse personnalisée sous 48h par El Hadji Dieng, développeur freelance.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "Devis Création Site Web à Dakar - El Hadji Dieng",
+        description: "Formulaire de demande de devis gratuit pour les services de développement web à Dakar, Sénégal.",
+        mainEntity: {
+          "@type": "Service",
+          provider: {
+            "@type": "Person",
+            name: baseProfileData.name
+          },
+          description: "Services de développement web, design UI/UX et SEO à Dakar, Sénégal"
+        }
+      },
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "Demande de Devis", path: "/demande-devis" }])
+    ]
   },
   blog: {
-    title: "Blog & Ressources",
-    description: "Découvrez mes articles, tutoriels et conseils sur le développement web, le design UI/UX et les technologies web modernes.",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      name: "Blog de El Hadji Dieng",
-      description: "Articles, tutoriels et ressources sur le développement web et le design UI/UX par El Hadji Dieng.",
-      author: {
-        "@type": "Person",
-        name: baseProfileData.name,
-        url: baseProfileData.url
-      }
-    }
+    title: "Blog Développement Web & Design - Tutoriels & Conseils | El Hadji Dieng",
+    description: "Articles, tutoriels et conseils sur le développement web, design UI/UX, React, WordPress et SEO par El Hadji Dieng, développeur web à Dakar, Sénégal. Ressources gratuites.",
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        name: "Blog Développement Web - El Hadji Dieng",
+        description: "Articles et tutoriels sur le développement web, le design UI/UX et le SEO par El Hadji Dieng, développeur à Dakar.",
+        author: {
+          "@type": "Person",
+          name: baseProfileData.name,
+          url: baseProfileData.url
+        }
+      },
+      getBreadcrumbSchema([{ name: "Accueil", path: "/" }, { name: "Blog", path: "/blog" }])
+    ]
   }
 };
 
