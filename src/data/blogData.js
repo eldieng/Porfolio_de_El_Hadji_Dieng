@@ -1,7 +1,237 @@
 // Tableau des articles de blog
 export const blogPosts = [
   {
-    id: 'comment-optimiser-son-site-web-pour-le-seo-en-2025',
+    id: 'pourquoi-site-web-entreprise-dakar-2025',
+    title: 'Pourquoi Votre Entreprise à Dakar a Absolument Besoin d\'un Site Web en 2025',
+    slug: 'pourquoi-site-web-entreprise-dakar-2025',
+    excerpt: 'En 2025, 80% des consommateurs sénégalais recherchent des services en ligne avant d\'acheter. Découvrez pourquoi un site web professionnel est devenu indispensable pour les entreprises à Dakar et comment il peut transformer votre activité.',
+    content: `
+      <p>Vous avez une entreprise à Dakar et vous n'avez pas encore de <strong>site web</strong> ? Ou peut-être avez-vous un vieux site qui n'est plus à jour ? En 2025, ne pas avoir de <strong>présence en ligne professionnelle</strong> au Sénégal, c'est comme avoir une boutique sans vitrine. Dans cet article, je vous explique pourquoi investir dans un <strong>site web pour votre entreprise à Dakar</strong> est devenu une nécessité — et pas un luxe.</p>
+
+      <h2>Le digital au Sénégal en 2025 : les chiffres qui parlent</h2>
+      <p>Avant de vous convaincre, regardons les chiffres :</p>
+      <ul>
+        <li><strong>Plus de 11 millions</strong> d'internautes au Sénégal (sur 18 millions d'habitants)</li>
+        <li><strong>98% des connexions</strong> se font via smartphone</li>
+        <li><strong>80% des consommateurs</strong> recherchent un produit ou service sur Google avant d'acheter</li>
+        <li><strong>Le e-commerce</strong> au Sénégal croît de 25% par an</li>
+        <li><strong>Wave et Orange Money</strong> ont démocratisé le paiement en ligne</li>
+      </ul>
+      <p>Ces chiffres montrent une réalité claire : <strong>vos clients sont en ligne</strong>. Si vous n'y êtes pas, ils iront chez vos concurrents qui, eux, ont un site web.</p>
+
+      <h2>7 raisons d'avoir un site web pour votre entreprise à Dakar</h2>
+
+      <h3>1. Être visible quand vos clients vous cherchent</h3>
+      <p>Quand quelqu'un à Dakar cherche <em>"restaurant Plateau"</em>, <em>"couturier Dakar"</em> ou <em>"comptable Sénégal"</em> sur Google, votre entreprise apparaît-elle ? Sans <strong>site web</strong>, la réponse est non. Avec un site optimisé pour le <strong>référencement local</strong>, vous apparaissez exactement quand vos clients potentiels ont besoin de vous.</p>
+      <p>C'est ce qu'on appelle le <strong>SEO local</strong> : être trouvé par les personnes qui cherchent vos services dans votre zone géographique. Un investissement qui rapporte des clients tous les jours, 24h/24.</p>
+
+      <h3>2. Gagner la confiance de vos clients</h3>
+      <p>En 2025, <strong>75% des consommateurs</strong> jugent la crédibilité d'une entreprise par la qualité de son site web. Un site professionnel avec vos réalisations, vos témoignages clients et vos coordonnées inspire confiance et rassure vos prospects.</p>
+      <p>Imaginez : un client hésite entre vous et un concurrent. Il tape vos deux noms sur Google. Votre concurrent a un beau site professionnel avec des avis clients. Vous n'avez rien. Qui va-t-il choisir ?</p>
+
+      <h3>3. Travailler 24h/24, même quand vous dormez</h3>
+      <p>Votre site web est votre <strong>commercial infatigable</strong>. Il présente vos services, répond aux questions fréquentes et recueille des demandes de devis — à 3h du matin, le week-end, pendant Tabaski. Même quand votre boutique est fermée, votre site continue de travailler pour vous.</p>
+
+      <h3>4. Toucher des clients au-delà de Dakar</h3>
+      <p>Sans site web, votre clientèle est limitée à votre quartier ou votre réseau. Avec un <strong>site web professionnel</strong>, vous pouvez toucher des clients partout au Sénégal — Thiès, Saint-Louis, Ziguinchor, Touba — et même en Afrique de l'Ouest et dans la diaspora sénégalaise en Europe.</p>
+
+      <h3>5. Vous démarquer de la concurrence</h3>
+      <p>La bonne nouvelle ? <strong>La majorité des PME à Dakar n'ont pas encore de site web</strong>, ou ont un site obsolète. C'est votre opportunité : en investissant maintenant dans un site moderne et optimisé, vous prenez une longueur d'avance sur vos concurrents.</p>
+
+      <h3>6. Présenter vos produits et services efficacement</h3>
+      <p>Avec une page Facebook, vous êtes limité dans la présentation de vos services. Un <strong>site web sur-mesure</strong> vous permet de :</p>
+      <ul>
+        <li>Créer des <strong>pages dédiées</strong> pour chaque service ou produit</li>
+        <li>Afficher un <strong>catalogue complet</strong> avec photos et descriptions détaillées</li>
+        <li>Intégrer un <strong>système de réservation</strong> ou de prise de rendez-vous</li>
+        <li>Publier des <strong>témoignages clients</strong> authentiques</li>
+        <li>Proposer un <strong>formulaire de contact</strong> ou de demande de devis</li>
+      </ul>
+
+      <h3>7. Mesurer et améliorer vos résultats</h3>
+      <p>Avec un site web et <strong>Google Analytics</strong>, vous savez exactement :</p>
+      <ul>
+        <li>Combien de personnes visitent votre site chaque jour</li>
+        <li>D'où viennent vos visiteurs (Google, Facebook, Instagram...)</li>
+        <li>Quels services intéressent le plus vos clients</li>
+        <li>Combien de demandes de devis vous recevez</li>
+      </ul>
+      <p>Ces données vous permettent d'<strong>ajuster votre stratégie</strong> et d'investir votre argent là où ça rapporte le plus.</p>
+
+      <h2>"Mais j'ai déjà une page Facebook, ça suffit non ?"</h2>
+      <p>C'est l'argument que j'entends le plus souvent à Dakar. Et la réponse est <strong>non</strong>. Voici pourquoi :</p>
+      <ul>
+        <li><strong>Vous ne contrôlez pas Facebook</strong> : l'algorithme change, votre page peut être suspendue, votre portée organique diminue chaque année</li>
+        <li><strong>Facebook n'apparaît pas bien sur Google</strong> : quand quelqu'un cherche vos services sur Google, votre page Facebook est rarement en première position</li>
+        <li><strong>Vous ne pouvez pas personnaliser</strong> : une page Facebook ressemble à toutes les autres. Un site web reflète votre identité unique</li>
+        <li><strong>Pas d'adresse email professionnelle</strong> : contact@votreentreprise.sn inspire plus confiance que votreentreprise@gmail.com</li>
+      </ul>
+      <p>Facebook est un excellent <strong>complément</strong> à votre site web, pas un remplacement. L'idéal est d'avoir les deux : un site web professionnel comme base et les réseaux sociaux pour la visibilité.</p>
+
+      <h2>Combien coûte un site web à Dakar ?</h2>
+      <p>Les prix varient selon le type de site :</p>
+      <ul>
+        <li><strong>Site vitrine</strong> (PME, artisans, restaurants) : à partir de <strong>150 000 FCFA</strong></li>
+        <li><strong>Site e-commerce</strong> (boutique en ligne) : à partir de <strong>300 000 FCFA</strong></li>
+        <li><strong>Application web</strong> (outil sur-mesure) : à partir de <strong>500 000 FCFA</strong></li>
+      </ul>
+      <p>C'est un investissement qui se rentabilise rapidement : un seul client gagné grâce à votre site peut couvrir le coût de sa création. Pour en savoir plus sur les tarifs détaillés, consultez mon article sur <a href="/blog/comment-choisir-developpeur-web-dakar-2025">comment choisir un développeur web à Dakar</a>.</p>
+
+      <h2>Comment commencer ?</h2>
+      <p>Créer un site web pour votre entreprise à Dakar est plus simple que vous ne le pensez. Voici les étapes :</p>
+      <ol>
+        <li><strong>Définissez vos objectifs</strong> : que voulez-vous que votre site fasse ? Présenter vos services ? Vendre en ligne ? Prendre des rendez-vous ?</li>
+        <li><strong>Choisissez un développeur web de confiance</strong> : vérifiez son portfolio, ses avis clients et sa capacité à inclure le SEO</li>
+        <li><strong>Préparez votre contenu</strong> : textes, photos de vos produits/services, logo</li>
+        <li><strong>Lancez votre site</strong> et inscrivez-vous sur Google My Business</li>
+        <li><strong>Partagez</strong> votre nouveau site sur vos réseaux sociaux</li>
+      </ol>
+
+      <h2>Conclusion : N'attendez plus</h2>
+      <p>Chaque jour sans site web est un jour où vos <strong>clients potentiels à Dakar</strong> vont chez vos concurrents. Le digital au Sénégal ne fait que croître, et les entreprises qui prennent le virage maintenant seront les leaders de demain.</p>
+      <p><strong>Prêt à donner une vitrine digitale à votre entreprise ?</strong> <a href="/demande-devis">Demandez votre devis gratuit</a> et discutons de votre projet. En tant que développeur web freelance à Dakar, je crée des sites professionnels, modernes et optimisés pour Google. Réponse garantie sous 48h.</p>
+    `,
+    author: 'El Hadji Dieng',
+    date: '2025-09-20',
+    category: 'Business',
+    tags: ['Site Web', 'Entreprise', 'Dakar', 'Sénégal', 'PME', 'Digital'],
+    image: '/assets/images/Blog/Pourquoi Site Web Entreprise Dakar 2025.jpg',
+    readTime: '10 min'
+  },
+  {
+    id: 'comment-choisir-developpeur-web-dakar-2025',
+    title: 'Comment Choisir un Développeur Web à Dakar en 2025 : 7 Critères Essentiels',
+    slug: 'comment-choisir-developpeur-web-dakar-2025',
+    excerpt: 'Vous cherchez un développeur web à Dakar ? Découvrez les 7 critères essentiels pour choisir le bon prestataire au Sénégal : portfolio, tarifs, technologies, SEO et support. Guide complet pour ne pas se tromper.',
+    content: `
+      <p>Trouver un <strong>développeur web fiable à Dakar</strong> peut être un vrai casse-tête. Entre les agences, les freelances et les plateformes en ligne, comment faire le bon choix pour votre projet ? En tant que <strong>développeur web freelance à Dakar</strong> depuis plusieurs années, je vous partage les <strong>7 critères essentiels</strong> pour ne pas vous tromper.</p>
+
+      <h2>1. Vérifiez le portfolio et les réalisations</h2>
+      <p>C'est le critère numéro 1. Un bon <strong>développeur web à Dakar</strong> doit pouvoir vous montrer des sites qu'il a réalisés et qui sont <strong>actuellement en ligne</strong>. Ne vous contentez pas de maquettes ou de captures d'écran.</p>
+      <p>Ce qu'il faut vérifier dans le portfolio :</p>
+      <ul>
+        <li><strong>Les sites sont-ils encore en ligne ?</strong> Un site hors service est mauvais signe</li>
+        <li><strong>Le design est-il moderne et professionnel ?</strong> Comparez avec les standards actuels</li>
+        <li><strong>Les sites sont-ils responsives ?</strong> Testez-les sur votre téléphone</li>
+        <li><strong>La vitesse de chargement</strong> : un bon site charge en moins de 3 secondes</li>
+      </ul>
+      <p>Astuce : demandez aussi des <strong>références clients</strong> que vous pouvez contacter directement. Un développeur sérieux n'hésitera pas à vous en fournir.</p>
+
+      <h2>2. Les technologies maîtrisées</h2>
+      <p>Le choix des technologies dépend de votre projet. Voici les principales technologies utilisées par les <strong>développeurs web au Sénégal</strong> :</p>
+      
+      <h3>Pour un site vitrine ou blog</h3>
+      <ul>
+        <li><strong>WordPress</strong> : le CMS le plus populaire au monde, idéal pour les PME à Dakar qui veulent gérer leur contenu elles-mêmes</li>
+        <li><strong>HTML/CSS/JavaScript</strong> : pour un site statique rapide et léger</li>
+      </ul>
+
+      <h3>Pour une application web</h3>
+      <ul>
+        <li><strong>React / Next.js</strong> : pour des applications modernes et performantes</li>
+        <li><strong>Node.js</strong> : pour le backend et les APIs</li>
+        <li><strong>PHP / Laravel</strong> : une alternative solide pour les applications complexes</li>
+      </ul>
+
+      <h3>Pour un e-commerce</h3>
+      <ul>
+        <li><strong>WooCommerce</strong> (WordPress) : le plus utilisé au Sénégal</li>
+        <li><strong>Shopify</strong> : solution hébergée, plus simple mais moins flexible</li>
+      </ul>
+      <p>Un bon <strong>développeur web à Dakar</strong> saura vous conseiller la technologie adaptée à votre budget et vos objectifs, sans essayer de vous vendre la solution la plus chère.</p>
+
+      <h2>3. Le référencement SEO est-il inclus ?</h2>
+      <p>Un beau site qui n'apparaît pas sur Google ne sert à rien. Pourtant, beaucoup de <strong>développeurs web au Sénégal</strong> négligent le <strong>référencement SEO</strong>. Assurez-vous que votre prestataire inclut :</p>
+      <ul>
+        <li><strong>L'optimisation des balises</strong> (title, meta description, H1, H2...)</li>
+        <li><strong>La vitesse de chargement</strong> optimisée</li>
+        <li><strong>Un site mobile-first</strong> (Google indexe d'abord la version mobile)</li>
+        <li><strong>Un sitemap XML</strong> et un fichier robots.txt</li>
+        <li><strong>Les données structurées</strong> Schema.org pour les rich snippets</li>
+        <li><strong>Le référencement local</strong> : indispensable pour être trouvé à Dakar</li>
+      </ul>
+      <p>Si votre développeur ne parle pas de SEO dès le début du projet, c'est un signal d'alarme. Le SEO doit être intégré dès la conception, pas ajouté après coup.</p>
+
+      <h2>4. Les tarifs et la transparence</h2>
+      <p>Les <strong>prix de création de sites web à Dakar</strong> varient énormément :</p>
+      <ul>
+        <li><strong>Site vitrine</strong> : 150 000 à 500 000 FCFA</li>
+        <li><strong>Site e-commerce</strong> : 300 000 à 1 500 000 FCFA</li>
+        <li><strong>Application web</strong> : 500 000 à 3 000 000 FCFA</li>
+      </ul>
+      <p><strong>Méfiez-vous des prix trop bas.</strong> Un site à 50 000 FCFA sera probablement un template non personnalisé, mal optimisé et sans support. À l'inverse, un prix très élevé ne garantit pas la qualité.</p>
+      <p>Demandez toujours un <strong>devis détaillé</strong> qui précise :</p>
+      <ul>
+        <li>Le nombre de pages incluses</li>
+        <li>Les fonctionnalités spécifiques</li>
+        <li>Le design (template ou sur-mesure)</li>
+        <li>L'hébergement et le nom de domaine</li>
+        <li>La maintenance après livraison</li>
+      </ul>
+
+      <h2>5. Le support et la maintenance après livraison</h2>
+      <p>Votre site web a besoin de <strong>maintenance régulière</strong> : mises à jour de sécurité, sauvegardes, corrections de bugs. C'est un point souvent oublié par les clients et négligé par certains prestataires à Dakar.</p>
+      <p>Avant de signer, clarifiez :</p>
+      <ul>
+        <li><strong>Quelle est la durée de la garantie ?</strong> (minimum 1 mois recommandé)</li>
+        <li><strong>Proposez-vous un forfait de maintenance ?</strong> (entre 20 000 et 50 000 FCFA/mois)</li>
+        <li><strong>Quel est le délai de réponse</strong> en cas de problème ?</li>
+        <li><strong>Aurez-vous accès aux codes source</strong> et à l'hébergement ?</li>
+      </ul>
+      <p>Important : vous devez <strong>toujours être propriétaire</strong> de votre nom de domaine, de votre hébergement et du code source de votre site.</p>
+
+      <h2>6. Les avis clients et la réputation</h2>
+      <p>Les <strong>avis Google</strong> sont votre meilleur allié. Avant de choisir un développeur web à Dakar :</p>
+      <ul>
+        <li>Consultez ses <strong>avis sur Google My Business</strong></li>
+        <li>Vérifiez son profil <strong>LinkedIn</strong> (recommandations, expérience)</li>
+        <li>Regardez son activité sur <strong>GitHub</strong> (pour les développeurs techniques)</li>
+        <li>Demandez des <strong>témoignages</strong> de clients précédents</li>
+      </ul>
+      <p>Un <strong>développeur web sérieux au Sénégal</strong> aura une présence en ligne cohérente et des clients satisfaits prêts à témoigner.</p>
+
+      <h2>7. La communication et la méthodologie de travail</h2>
+      <p>La réussite d'un projet web dépend en grande partie de la <strong>communication</strong> entre vous et votre développeur. Lors du premier échange :</p>
+      <ul>
+        <li><strong>Est-il à l'écoute ?</strong> Pose-t-il des questions sur votre activité et vos objectifs ?</li>
+        <li><strong>Est-il clair ?</strong> Explique-t-il les choses sans jargon technique ?</li>
+        <li><strong>A-t-il une méthodologie ?</strong> Propose-t-il un planning avec des étapes claires ?</li>
+        <li><strong>Est-il réactif ?</strong> Répond-il rapidement à vos messages ?</li>
+      </ul>
+      <p>Au Sénégal, la relation humaine est essentielle. Choisissez un développeur avec qui vous vous sentez à l'aise et en confiance. Un bon prestataire doit être un <strong>partenaire</strong>, pas juste un exécutant.</p>
+
+      <h2>Freelance ou agence web à Dakar ?</h2>
+      <p>C'est une question fréquente. Voici un comparatif rapide :</p>
+
+      <h3>Développeur freelance</h3>
+      <ul>
+        <li>Tarifs <strong>30 à 50% moins cher</strong> qu'une agence</li>
+        <li>Communication <strong>directe</strong>, sans intermédiaire</li>
+        <li>Plus <strong>flexible</strong> et réactif</li>
+        <li>Idéal pour les <strong>PME, startups et entrepreneurs</strong></li>
+      </ul>
+
+      <h3>Agence web</h3>
+      <ul>
+        <li>Équipe <strong>multidisciplinaire</strong></li>
+        <li>Capacité à gérer de <strong>très gros projets</strong></li>
+        <li>Tarifs plus élevés (frais de structure)</li>
+        <li>Idéal pour les <strong>grandes entreprises et multinationales</strong></li>
+      </ul>
+
+      <h2>Conclusion : Trouvez le bon développeur web à Dakar</h2>
+      <p>Choisir un <strong>développeur web à Dakar</strong> est une décision importante pour votre entreprise. En résumé, vérifiez toujours le <strong>portfolio</strong>, les <strong>avis clients</strong>, les <strong>technologies maîtrisées</strong> et le <strong>support après-vente</strong>. Ne vous laissez pas séduire uniquement par le prix le plus bas.</p>
+      <p>Vous cherchez un <strong>développeur web fiable à Dakar</strong> ? <a href="/demande-devis">Demandez votre devis gratuit</a> et discutons de votre projet. Je vous répondrai personnellement sous 48h avec une proposition adaptée à vos besoins et votre budget.</p>
+    `,
+    author: 'El Hadji Dieng',
+    date: '2025-08-15',
+    category: 'Business',
+    tags: ['Développeur Web', 'Dakar', 'Sénégal', 'Freelance', 'Guide', 'Création Site Web'],
+    image: '/assets/images/Blog/Comment Choisir Developpeur Web Dakar 2025.jpg',
+    readTime: '12 min'
+  },
+  {
+    id: 'combien-coute-creation-site-web-senegal-2025',
     title: 'Comment Optimiser son Site Web pour le SEO en 2025: Guide Complet',
     slug: 'comment-optimiser-site-web-seo-2025-guide-complet',
     excerpt: 'Découvrez les stratégies SEO les plus efficaces en 2025 pour améliorer le classement de votre site web dans les moteurs de recherche et augmenter votre visibilité en ligne.',
