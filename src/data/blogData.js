@@ -1,14 +1,14 @@
 // Tableau des articles de blog
 export const blogPosts = [
   {
-    id: 'pourquoi-site-web-entreprise-dakar-2025',
-    title: 'Pourquoi Votre Entreprise à Dakar a Absolument Besoin d\'un Site Web en 2025',
-    slug: 'pourquoi-site-web-entreprise-dakar-2025',
-    excerpt: 'En 2025, 80% des consommateurs sénégalais recherchent des services en ligne avant d\'acheter. Découvrez pourquoi un site web professionnel est devenu indispensable pour les entreprises à Dakar et comment il peut transformer votre activité.',
+    id: 'pourquoi-site-web-entreprise-dakar-2026',
+    title: 'Pourquoi Votre Entreprise à Dakar a Absolument Besoin d\'un Site Web en 2026',
+    slug: 'pourquoi-site-web-entreprise-dakar-2026',
+    excerpt: 'En 2026, 80% des consommateurs sénégalais recherchent des services en ligne avant d\'acheter. Découvrez pourquoi un site web professionnel est devenu indispensable pour les entreprises à Dakar et comment il peut transformer votre activité.',
     content: `
-      <p>Vous avez une entreprise à Dakar et vous n'avez pas encore de <strong>site web</strong> ? Ou peut-être avez-vous un vieux site qui n'est plus à jour ? En 2025, ne pas avoir de <strong>présence en ligne professionnelle</strong> au Sénégal, c'est comme avoir une boutique sans vitrine. Dans cet article, je vous explique pourquoi investir dans un <strong>site web pour votre entreprise à Dakar</strong> est devenu une nécessité — et pas un luxe.</p>
+      <p>Vous avez une entreprise à Dakar et vous n'avez pas encore de <strong>site web</strong> ? Ou peut-être avez-vous un vieux site qui n'est plus à jour ? En 2026, ne pas avoir de <strong>présence en ligne professionnelle</strong> au Sénégal, c'est comme avoir une boutique sans vitrine. Dans cet article, je vous explique pourquoi investir dans un <strong>site web pour votre entreprise à Dakar</strong> est devenu une nécessité — et pas un luxe.</p>
 
-      <h2>Le digital au Sénégal en 2025 : les chiffres qui parlent</h2>
+      <h2>Le digital au Sénégal en 2026 : les chiffres qui parlent</h2>
       <p>Avant de vous convaincre, regardons les chiffres :</p>
       <ul>
         <li><strong>Plus de 11 millions</strong> d'internautes au Sénégal (sur 18 millions d'habitants)</li>
@@ -26,7 +26,7 @@ export const blogPosts = [
       <p>C'est ce qu'on appelle le <strong>SEO local</strong> : être trouvé par les personnes qui cherchent vos services dans votre zone géographique. Un investissement qui rapporte des clients tous les jours, 24h/24.</p>
 
       <h3>2. Gagner la confiance de vos clients</h3>
-      <p>En 2025, <strong>75% des consommateurs</strong> jugent la crédibilité d'une entreprise par la qualité de son site web. Un site professionnel avec vos réalisations, vos témoignages clients et vos coordonnées inspire confiance et rassure vos prospects.</p>
+      <p>En 2026, <strong>75% des consommateurs</strong> jugent la crédibilité d'une entreprise par la qualité de son site web. Un site professionnel avec vos réalisations, vos témoignages clients et vos coordonnées inspire confiance et rassure vos prospects.</p>
       <p>Imaginez : un client hésite entre vous et un concurrent. Il tape vos deux noms sur Google. Votre concurrent a un beau site professionnel avec des avis clients. Vous n'avez rien. Qui va-t-il choisir ?</p>
 
       <h3>3. Travailler 24h/24, même quand vous dormez</h3>
@@ -75,7 +75,7 @@ export const blogPosts = [
         <li><strong>Site e-commerce</strong> (boutique en ligne) : à partir de <strong>300 000 FCFA</strong></li>
         <li><strong>Application web</strong> (outil sur-mesure) : à partir de <strong>500 000 FCFA</strong></li>
       </ul>
-      <p>C'est un investissement qui se rentabilise rapidement : un seul client gagné grâce à votre site peut couvrir le coût de sa création. Pour en savoir plus sur les tarifs détaillés, consultez mon article sur <a href="/blog/comment-choisir-developpeur-web-dakar-2025">comment choisir un développeur web à Dakar</a>.</p>
+      <p>C'est un investissement qui se rentabilise rapidement : un seul client gagné grâce à votre site peut couvrir le coût de sa création. Pour en savoir plus sur les tarifs détaillés, consultez mon article sur <a href="/blog/comment-choisir-developpeur-web-dakar-2026">comment choisir un développeur web à Dakar</a>.</p>
 
       <h2>Comment commencer ?</h2>
       <p>Créer un site web pour votre entreprise à Dakar est plus simple que vous ne le pensez. Voici les étapes :</p>
@@ -92,16 +92,16 @@ export const blogPosts = [
       <p><strong>Prêt à donner une vitrine digitale à votre entreprise ?</strong> <a href="/demande-devis">Demandez votre devis gratuit</a> et discutons de votre projet. En tant que développeur web freelance à Dakar, je crée des sites professionnels, modernes et optimisés pour Google. Réponse garantie sous 48h.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-09-20',
+    date: '2026-02-12',
     category: 'Business',
     tags: ['Site Web', 'Entreprise', 'Dakar', 'Sénégal', 'PME', 'Digital'],
     image: '/assets/images/Blog/Pourquoi Site Web Entreprise Dakar 2025.png',
     readTime: '10 min'
   },
   {
-    id: 'comment-choisir-developpeur-web-dakar-2025',
-    title: 'Comment Choisir un Développeur Web à Dakar en 2025 : 7 Critères Essentiels',
-    slug: 'comment-choisir-developpeur-web-dakar-2025',
+    id: 'comment-choisir-developpeur-web-dakar-2026',
+    title: 'Comment Choisir un Développeur Web à Dakar en 2026 : 7 Critères Essentiels',
+    slug: 'comment-choisir-developpeur-web-dakar-2026',
     excerpt: 'Vous cherchez un développeur web à Dakar ? Découvrez les 7 critères essentiels pour choisir le bon prestataire au Sénégal : portfolio, tarifs, technologies, SEO et support. Guide complet pour ne pas se tromper.',
     content: `
       <p>Trouver un <strong>développeur web fiable à Dakar</strong> peut être un vrai casse-tête. Entre les agences, les freelances et les plateformes en ligne, comment faire le bon choix pour votre projet ? En tant que <strong>développeur web freelance à Dakar</strong> depuis plusieurs années, je vous partage les <strong>7 critères essentiels</strong> pour ne pas vous tromper.</p>
@@ -224,19 +224,19 @@ export const blogPosts = [
       <p>Vous cherchez un <strong>développeur web fiable à Dakar</strong> ? <a href="/demande-devis">Demandez votre devis gratuit</a> et discutons de votre projet. Je vous répondrai personnellement sous 48h avec une proposition adaptée à vos besoins et votre budget.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-08-15',
+    date: '2026-02-10',
     category: 'Business',
     tags: ['Développeur Web', 'Dakar', 'Sénégal', 'Freelance', 'Guide', 'Création Site Web'],
     image: '/assets/images/Blog/Comment Choisir un Développeur Web à Dakar en 2025  7 Critères Essentiels.png',
     readTime: '12 min'
   },
   {
-    id: 'combien-coute-creation-site-web-senegal-2025',
-    title: 'Comment Optimiser son Site Web pour le SEO en 2025: Guide Complet',
-    slug: 'comment-optimiser-site-web-seo-2025-guide-complet',
-    excerpt: 'Découvrez les stratégies SEO les plus efficaces en 2025 pour améliorer le classement de votre site web dans les moteurs de recherche et augmenter votre visibilité en ligne.',
+    id: 'comment-optimiser-site-web-seo-2026',
+    title: 'Comment Optimiser son Site Web pour le SEO en 2026: Guide Complet',
+    slug: 'comment-optimiser-site-web-seo-2026-guide-complet',
+    excerpt: 'Découvrez les stratégies SEO les plus efficaces en 2026 pour améliorer le classement de votre site web dans les moteurs de recherche et augmenter votre visibilité en ligne.',
     content: `
-      <p>L'optimisation pour les moteurs de recherche (SEO) reste un élément crucial pour tout site web qui souhaite se démarquer dans un environnement numérique de plus en plus concurrentiel. Dans cet article, je partage mes connaissances approfondies sur les meilleures pratiques SEO à adopter en 2025.</p>
+      <p>L'optimisation pour les moteurs de recherche (SEO) reste un élément crucial pour tout site web qui souhaite se démarquer dans un environnement numérique de plus en plus concurrentiel. Dans cet article, je partage mes connaissances approfondies sur les meilleures pratiques SEO à adopter en 2026.</p>
       
       <h2>L'importance des intentions de recherche</h2>
       <p>Google et les autres moteurs de recherche accordent désormais une importance capitale à l'intention de recherche des utilisateurs. Il ne suffit plus de cibler des mots-clés spécifiques; vous devez comprendre pourquoi quelqu'un effectue une recherche et fournir un contenu qui répond précisément à cette intention.</p>
@@ -257,10 +257,10 @@ export const blogPosts = [
       <p>L'aspect technique du SEO ne doit pas être négligé. Assurez-vous que votre site utilise HTTPS, qu'il est correctement indexé, qu'il dispose d'un sitemap XML à jour et qu'il est optimisé pour les appareils mobiles. J'ai récemment corrigé des problèmes de crawl sur un site e-commerce, ce qui a entraîné une augmentation de 28% des pages indexées et une amélioration significative du trafic.</p>
       
       <h2>Conclusion</h2>
-      <p>Le SEO continue d'évoluer, mais les fondamentaux restent les mêmes : créer un contenu de qualité qui répond aux besoins des utilisateurs, optimiser l'expérience utilisateur et établir l'autorité de votre site. En suivant ces conseils, vous serez bien positionné pour améliorer votre visibilité en ligne en 2025 et au-delà.</p>
+      <p>Le SEO continue d'évoluer, mais les fondamentaux restent les mêmes : créer un contenu de qualité qui répond aux besoins des utilisateurs, optimiser l'expérience utilisateur et établir l'autorité de votre site. En suivant ces conseils, vous serez bien positionné pour améliorer votre visibilité en ligne en 2026 et au-delà.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-06-28',
+    date: '2026-01-28',
     category: 'SEO',
     tags: ['SEO', 'Référencement', 'Marketing Digital', 'Optimisation Web'],
     image: '/assets/images/Blog/Comment Optimiser son Site Web pour le SEO en 2025 Guide Complet.jpg',
@@ -293,7 +293,7 @@ export const blogPosts = [
       <p>En intégrant ces principes de design dans votre processus de développement, vous créerez des interfaces non seulement fonctionnelles mais aussi agréables et intuitives pour vos utilisateurs.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-05-15',
+    date: '2026-01-15',
     category: 'Design',
     tags: ['UX/UI', 'Design Principles', 'Frontend'],
     image: '/assets/images/Blog/Principes de Design Essentiels pour les Développeurs.jpg',
@@ -329,19 +329,19 @@ export const blogPosts = [
       <p>L'optimisation des performances est un processus continu. En appliquant ces techniques, vous pourrez créer des applications React plus rapides et plus réactives.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-06-02',
+    date: '2026-01-20',
     category: 'Développement',
     tags: ['React', 'Performance', 'JavaScript', 'Frontend'],
     image: '/assets/images/Blog/Optimisation des Performances React Techniques Avancées.jpg',
     readTime: '7 min'
   },
   {
-    id: 'developpement-front-end-tendances-2025',
-    title: 'Les Tendances Incontournables du Développement Front-End en 2025',
-    slug: 'developpement-front-end-tendances-2025',
+    id: 'developpement-front-end-tendances-2026',
+    title: 'Les Tendances Incontournables du Développement Front-End en 2026',
+    slug: 'developpement-front-end-tendances-2026',
     excerpt: 'Explorez les technologies et méthodologies front-end qui domineront le développement web en 2025, et comment les intégrer dans vos projets pour rester à la pointe.',
     content: `
-      <p>Le développement front-end évolue à une vitesse fulgurante. En tant que développeur front-end passionné, je surveille constamment les nouvelles tendances pour offrir les meilleures solutions à mes clients. Voici mon analyse des technologies et approches qui domineront le paysage du développement front-end en 2025.</p>
+      <p>Le développement front-end évolue à une vitesse fulgurante. En tant que développeur front-end passionné, je surveille constamment les nouvelles tendances pour offrir les meilleures solutions à mes clients. Voici mon analyse des technologies et approches qui domineront le paysage du développement front-end en 2026.</p>
       
       <h2>WebAssembly: Au-delà de JavaScript</h2>
       <p>WebAssembly (Wasm) continue sa progression et devient un standard incontournable pour les applications web hautes performances. J'ai récemment utilisé Wasm pour développer une application de traitement d'image qui s'exécute 3 fois plus rapidement qu'une implémentation JavaScript pure. Cette technologie permet d'exécuter du code compilé à partir de langages comme C++ ou Rust directement dans le navigateur à une vitesse proche du natif.</p>
@@ -362,10 +362,10 @@ export const blogPosts = [
       <p>L'IA transforme le développement front-end, de la génération de code à l'optimisation des performances. J'utilise des outils comme GitHub Copilot pour accélérer le développement et des algorithmes d'IA pour optimiser dynamiquement l'expérience utilisateur en fonction du comportement des visiteurs.</p>
       
       <h2>Conclusion</h2>
-      <p>Le développement front-end en 2025 sera marqué par la performance, la modularité et l'intelligence. Les développeurs qui maîtriseront ces technologies et approches seront particulièrement recherchés. Dans mes projets, j'intègre systématiquement ces tendances pour créer des expériences web modernes, performantes et évolutives.</p>
+      <p>Le développement front-end en 2026 est marqué par la performance, la modularité et l'intelligence. Les développeurs qui maîtriseront ces technologies et approches seront particulièrement recherchés. Dans mes projets, j'intègre systématiquement ces tendances pour créer des expériences web modernes, performantes et évolutives.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-06-20',
+    date: '2026-01-10',
     category: 'Développement',
     tags: ['Front-End', 'JavaScript', 'WebAssembly', 'CSS Avancé', 'Micro-Frontends'],
     image: '/assets/images/Blog/Les Tendances Incontournables du Développement Front-End en 2025.jpg',
@@ -401,19 +401,19 @@ export const blogPosts = [
       <p>L'accessibilité web est un processus continu, pas une case à cocher. En intégrant ces pratiques dès le début de vos projets, vous créerez des sites web qui fonctionnent pour tous, indépendamment de leurs capacités. Mon expérience montre que les sites accessibles sont généralement plus performants, mieux référencés et offrent une meilleure expérience à tous les utilisateurs.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-06-15',
+    date: '2026-01-05',
     category: 'Accessibilité',
     tags: ['Accessibilité Web', 'WCAG', 'Inclusion Numérique', 'UX/UI', 'HTML Sémantique'],
     image: '/assets/images/Blog/Accessibilité Web Guide Pratique pour Développeurs et Designers.jpg',
     readTime: '8 min'
   },
   {
-    id: 'responsive-design-best-practices',
-    title: 'Meilleures Pratiques pour un Design Responsive en 2025',
-    slug: 'meilleures-pratiques-design-responsive-2025',
+    id: 'responsive-design-best-practices-2026',
+    title: 'Meilleures Pratiques pour un Design Responsive en 2026',
+    slug: 'meilleures-pratiques-design-responsive-2026',
     excerpt: 'Découvrez les dernières tendances et techniques pour créer des sites web parfaitement adaptés à tous les appareils.',
     content: `
-      <p>À l'ère du mobile-first, un design responsive n'est plus une option mais une nécessité. Voici les meilleures pratiques à adopter en 2025.</p>
+      <p>À l'ère du mobile-first, un design responsive n'est plus une option mais une nécessité. Voici les meilleures pratiques à adopter en 2026.</p>
       
       <h2>Au-delà des media queries: CSS moderne pour le responsive</h2>
       <p>Les media queries restent importantes, mais les fonctionnalités CSS modernes comme Grid, Flexbox, et les unités relatives (rem, vh, vw) offrent des approches plus flexibles pour le design responsive.</p>
@@ -437,7 +437,7 @@ export const blogPosts = [
       <p>Le design responsive continue d'évoluer avec les nouvelles technologies. En adoptant ces pratiques, vous créerez des sites web qui offrent une expérience utilisateur exceptionnelle sur tous les appareils.</p>
     `,
     author: 'El Hadji Dieng',
-    date: '2025-06-10',
+    date: '2025-12-28',
     category: 'Design',
     tags: ['Responsive Design', 'CSS', 'Mobile-First', 'UX/UI'],
     image: '/assets/images/Blog/Meilleures Pratiques pour un Design Responsive en 2025.jpg',
