@@ -434,7 +434,7 @@ const PortfolioSection = () => {
               }}
             >
               <ProjectImage>
-                <img src={project.image} alt={project.title} loading="lazy" />
+                <img src={project.image} alt={project.title} loading="lazy" decoding="async" width="400" height="220" />
               </ProjectImage>
               
               <ProjectInfo>

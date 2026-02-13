@@ -213,7 +213,12 @@ const Header = () => {
           El Hadji <span>Dieng</span>
         </Logo>
         
-        <MobileMenuButton onClick={toggleMenu} scrolled={isScrolled}>
+        <MobileMenuButton 
+          onClick={toggleMenu} 
+          scrolled={isScrolled}
+          aria-label={isMobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={isMobileMenuOpen}
+        >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </MobileMenuButton>
         

@@ -124,19 +124,19 @@ const Footer = () => {
           <h3>El Hadji Dieng</h3>
           <p>Web Master professionnel spécialisé dans la création de sites web modernes et performants. Je propose des solutions sur mesure pour répondre à vos besoins digitaux.</p>
           <SocialIcons>
-            <a href="https://www.linkedin.com/in/bambiste4/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/bambiste4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/eldieng/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/eldieng/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://www.instagram.com/elbambiste04" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/elbambiste04" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://www.facebook.com/share/16c2u9cioC/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/share/16c2u9cioC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook />
             </a>
-            <a href="https://www.tiktok.com/@bambiste4" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@bambiste4" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
               <FaTiktok />
             </a>
           </SocialIcons>

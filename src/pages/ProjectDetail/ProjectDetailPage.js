@@ -103,7 +103,7 @@ const ProjectDetailPage = () => {
             transition={{ duration: 0.6 }}
           >
             <ProjectImage>
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt={project.title} width="800" height="450" loading="eager" decoding="async" />
             </ProjectImage>
             
             <ProjectInfo>

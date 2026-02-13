@@ -357,7 +357,7 @@ const TestimonialsSection = () => {
                 
                 <ClientInfo>
                   <ClientImage>
-                    <img src={testimonial.image} alt={testimonial.name} />
+                    <img src={testimonial.image} alt={testimonial.name} width="70" height="70" loading="lazy" decoding="async" />
                   </ClientImage>
                   <ClientDetails>
                     <h4>{testimonial.name}</h4>

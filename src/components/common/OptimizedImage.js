@@ -22,6 +22,8 @@ const OptimizedImage = ({
   objectFit = 'cover',
   quality = 80,
   avif = true,
+  width,
+  height,
   ...props
 }) => {
   // Créer les chemins pour les formats optimisés
@@ -49,6 +51,9 @@ const OptimizedImage = ({
         src={src} 
         alt={alt || ''} 
         loading={lazy ? 'lazy' : undefined}
+        decoding="async"
+        width={width}
+        height={height}
         style={{ objectFit, ...style }}
         {...props}
       />

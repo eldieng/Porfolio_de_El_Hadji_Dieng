@@ -721,7 +721,7 @@ const ServiceDetailPage = () => {
         >
           <ServiceContent>
             <ServiceImage>
-              <img src={service.image} alt={service.title} />
+              <img src={service.image} alt={service.title} width="600" height="400" loading="eager" decoding="async" />
             </ServiceImage>
             
             <ServiceDescription>
